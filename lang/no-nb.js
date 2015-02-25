@@ -39,13 +39,13 @@
 	
 	if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.
-		define(['../tv4'], function(tv4) {
+		define(['tv4'], function(tv4) {
 			tv4.addLanguage('no-nb', lang);
 			return tv4;
 		});
 	} else if (typeof module !== 'undefined' && module.exports) {
 		// CommonJS. Define export.
-		var tv4 = require('../tv4');
+		var tv4 = require('tv4');
 		tv4.addLanguage('no-nb', lang);
 		module.exports = tv4;
 	} else {
