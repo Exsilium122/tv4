@@ -9,7 +9,7 @@ If you find a bug or make an improvement, it would be courteous to let the autho
 (function (global, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define([], factory);
+    define('tv4',[], factory);
   } else if (typeof module !== 'undefined' && module.exports){
     // CommonJS. Define export.
     module.exports = factory();
